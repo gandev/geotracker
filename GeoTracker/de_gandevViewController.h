@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface de_gandevViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+
+#import <ObjectiveDDP/ObjectiveDDP.h>
+#import <ObjectiveDDP/MeteorClient.h>
+
+
+@interface de_gandevViewController : UIViewController <CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+    CLLocation *location;
+    MeteorClient *mc;
+    ObjectiveDDP *ddp;
+}
+
+  @property (nonatomic, strong) IBOutlet UILabel *currentLocation;
+  @property (nonatomic, strong) IBOutlet UITextField *connectionURL;
+
+  - (IBAction)activateTracking:(id)sender;
 
 @end

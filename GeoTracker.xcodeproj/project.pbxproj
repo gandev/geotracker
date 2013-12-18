@@ -1,476 +1,1136 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3B8995FD1861CDF300B637C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8995FC1861CDF300B637C7 /* Foundation.framework */; };
-		3B8995FF1861CDF300B637C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8995FE1861CDF300B637C7 /* CoreGraphics.framework */; };
-		3B8996011861CDF300B637C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8996001861CDF300B637C7 /* UIKit.framework */; };
-		3B8996071861CDF300B637C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B8996051861CDF300B637C7 /* InfoPlist.strings */; };
-		3B8996091861CDF300B637C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8996081861CDF300B637C7 /* main.m */; };
-		3B89960D1861CDF300B637C7 /* de_gandevAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B89960C1861CDF300B637C7 /* de_gandevAppDelegate.m */; };
-		3B8996101861CDF300B637C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B89960E1861CDF300B637C7 /* Main.storyboard */; };
-		3B8996131861CDF300B637C7 /* de_gandevViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8996121861CDF300B637C7 /* de_gandevViewController.m */; };
-		3B8996151861CDF300B637C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8996141861CDF300B637C7 /* Images.xcassets */; };
-		3B89961C1861CDF300B637C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B89961B1861CDF300B637C7 /* XCTest.framework */; };
-		3B89961D1861CDF300B637C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8995FC1861CDF300B637C7 /* Foundation.framework */; };
-		3B89961E1861CDF300B637C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8996001861CDF300B637C7 /* UIKit.framework */; };
-		3B8996261861CDF300B637C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B8996241861CDF300B637C7 /* InfoPlist.strings */; };
-		3B8996281861CDF300B637C7 /* GeoTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8996271861CDF300B637C7 /* GeoTrackerTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3B89961F1861CDF300B637C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B8995F11861CDF300B637C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B8995F81861CDF300B637C7;
-			remoteInfo = GeoTracker;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		3B8995F91861CDF300B637C7 /* GeoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B8995FC1861CDF300B637C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3B8995FE1861CDF300B637C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3B8996001861CDF300B637C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3B8996041861CDF300B637C7 /* GeoTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTracker-Info.plist"; sourceTree = "<group>"; };
-		3B8996061861CDF300B637C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3B8996081861CDF300B637C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3B89960A1861CDF300B637C7 /* GeoTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoTracker-Prefix.pch"; sourceTree = "<group>"; };
-		3B89960B1861CDF300B637C7 /* de_gandevAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = de_gandevAppDelegate.h; sourceTree = "<group>"; };
-		3B89960C1861CDF300B637C7 /* de_gandevAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = de_gandevAppDelegate.m; sourceTree = "<group>"; };
-		3B89960F1861CDF300B637C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B8996111861CDF300B637C7 /* de_gandevViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = de_gandevViewController.h; sourceTree = "<group>"; };
-		3B8996121861CDF300B637C7 /* de_gandevViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = de_gandevViewController.m; sourceTree = "<group>"; };
-		3B8996141861CDF300B637C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3B89961A1861CDF300B637C7 /* GeoTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B89961B1861CDF300B637C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3B8996231861CDF300B637C7 /* GeoTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTrackerTests-Info.plist"; sourceTree = "<group>"; };
-		3B8996251861CDF300B637C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3B8996271861CDF300B637C7 /* GeoTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoTrackerTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3B8995F61861CDF300B637C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8995FF1861CDF300B637C7 /* CoreGraphics.framework in Frameworks */,
-				3B8996011861CDF300B637C7 /* UIKit.framework in Frameworks */,
-				3B8995FD1861CDF300B637C7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B8996171861CDF300B637C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B89961C1861CDF300B637C7 /* XCTest.framework in Frameworks */,
-				3B89961E1861CDF300B637C7 /* UIKit.framework in Frameworks */,
-				3B89961D1861CDF300B637C7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		3B8995F01861CDF200B637C7 = {
-			isa = PBXGroup;
-			children = (
-				3B8996021861CDF300B637C7 /* GeoTracker */,
-				3B8996211861CDF300B637C7 /* GeoTrackerTests */,
-				3B8995FB1861CDF300B637C7 /* Frameworks */,
-				3B8995FA1861CDF300B637C7 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		3B8995FA1861CDF300B637C7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3B8995F91861CDF300B637C7 /* GeoTracker.app */,
-				3B89961A1861CDF300B637C7 /* GeoTrackerTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3B8995FB1861CDF300B637C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3B8995FC1861CDF300B637C7 /* Foundation.framework */,
-				3B8995FE1861CDF300B637C7 /* CoreGraphics.framework */,
-				3B8996001861CDF300B637C7 /* UIKit.framework */,
-				3B89961B1861CDF300B637C7 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3B8996021861CDF300B637C7 /* GeoTracker */ = {
-			isa = PBXGroup;
-			children = (
-				3B89960B1861CDF300B637C7 /* de_gandevAppDelegate.h */,
-				3B89960C1861CDF300B637C7 /* de_gandevAppDelegate.m */,
-				3B89960E1861CDF300B637C7 /* Main.storyboard */,
-				3B8996111861CDF300B637C7 /* de_gandevViewController.h */,
-				3B8996121861CDF300B637C7 /* de_gandevViewController.m */,
-				3B8996141861CDF300B637C7 /* Images.xcassets */,
-				3B8996031861CDF300B637C7 /* Supporting Files */,
-			);
-			path = GeoTracker;
-			sourceTree = "<group>";
-		};
-		3B8996031861CDF300B637C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3B8996041861CDF300B637C7 /* GeoTracker-Info.plist */,
-				3B8996051861CDF300B637C7 /* InfoPlist.strings */,
-				3B8996081861CDF300B637C7 /* main.m */,
-				3B89960A1861CDF300B637C7 /* GeoTracker-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3B8996211861CDF300B637C7 /* GeoTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B8996271861CDF300B637C7 /* GeoTrackerTests.m */,
-				3B8996221861CDF300B637C7 /* Supporting Files */,
-			);
-			path = GeoTrackerTests;
-			sourceTree = "<group>";
-		};
-		3B8996221861CDF300B637C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3B8996231861CDF300B637C7 /* GeoTrackerTests-Info.plist */,
-				3B8996241861CDF300B637C7 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		3B8995F81861CDF300B637C7 /* GeoTracker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B89962B1861CDF300B637C7 /* Build configuration list for PBXNativeTarget "GeoTracker" */;
-			buildPhases = (
-				3B8995F51861CDF300B637C7 /* Sources */,
-				3B8995F61861CDF300B637C7 /* Frameworks */,
-				3B8995F71861CDF300B637C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GeoTracker;
-			productName = GeoTracker;
-			productReference = 3B8995F91861CDF300B637C7 /* GeoTracker.app */;
-			productType = "com.apple.product-type.application";
-		};
-		3B8996191861CDF300B637C7 /* GeoTrackerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B89962E1861CDF300B637C7 /* Build configuration list for PBXNativeTarget "GeoTrackerTests" */;
-			buildPhases = (
-				3B8996161861CDF300B637C7 /* Sources */,
-				3B8996171861CDF300B637C7 /* Frameworks */,
-				3B8996181861CDF300B637C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B8996201861CDF300B637C7 /* PBXTargetDependency */,
-			);
-			name = GeoTrackerTests;
-			productName = GeoTrackerTests;
-			productReference = 3B89961A1861CDF300B637C7 /* GeoTrackerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3B8995F11861CDF300B637C7 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = de.gandev;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Andreas Gabriel";
-				TargetAttributes = {
-					3B8996191861CDF300B637C7 = {
-						TestTargetID = 3B8995F81861CDF300B637C7;
-					};
-				};
-			};
-			buildConfigurationList = 3B8995F41861CDF300B637C7 /* Build configuration list for PBXProject "GeoTracker" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 3B8995F01861CDF200B637C7;
-			productRefGroup = 3B8995FA1861CDF300B637C7 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3B8995F81861CDF300B637C7 /* GeoTracker */,
-				3B8996191861CDF300B637C7 /* GeoTrackerTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3B8995F71861CDF300B637C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8996151861CDF300B637C7 /* Images.xcassets in Resources */,
-				3B8996071861CDF300B637C7 /* InfoPlist.strings in Resources */,
-				3B8996101861CDF300B637C7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B8996181861CDF300B637C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8996261861CDF300B637C7 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3B8995F51861CDF300B637C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8996131861CDF300B637C7 /* de_gandevViewController.m in Sources */,
-				3B89960D1861CDF300B637C7 /* de_gandevAppDelegate.m in Sources */,
-				3B8996091861CDF300B637C7 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B8996161861CDF300B637C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8996281861CDF300B637C7 /* GeoTrackerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3B8996201861CDF300B637C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B8995F81861CDF300B637C7 /* GeoTracker */;
-			targetProxy = 3B89961F1861CDF300B637C7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3B8996051861CDF300B637C7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B8996061861CDF300B637C7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3B89960E1861CDF300B637C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B89960F1861CDF300B637C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3B8996241861CDF300B637C7 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B8996251861CDF300B637C7 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		3B8996291861CDF300B637C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		3B89962A1861CDF300B637C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3B89962C1861CDF300B637C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoTracker/GeoTracker-Prefix.pch";
-				INFOPLIST_FILE = "GeoTracker/GeoTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		3B89962D1861CDF300B637C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoTracker/GeoTracker-Prefix.pch";
-				INFOPLIST_FILE = "GeoTracker/GeoTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3B89962F1861CDF300B637C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoTracker.app/GeoTracker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoTracker/GeoTracker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GeoTrackerTests/GeoTrackerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3B8996301861CDF300B637C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoTracker.app/GeoTracker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoTracker/GeoTracker-Prefix.pch";
-				INFOPLIST_FILE = "GeoTrackerTests/GeoTrackerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3B8995F41861CDF300B637C7 /* Build configuration list for PBXProject "GeoTracker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B8996291861CDF300B637C7 /* Debug */,
-				3B89962A1861CDF300B637C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B89962B1861CDF300B637C7 /* Build configuration list for PBXNativeTarget "GeoTracker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B89962C1861CDF300B637C7 /* Debug */,
-				3B89962D1861CDF300B637C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		3B89962E1861CDF300B637C7 /* Build configuration list for PBXNativeTarget "GeoTrackerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B89962F1861CDF300B637C7 /* Debug */,
-				3B8996301861CDF300B637C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3B8995F11861CDF300B637C7 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>158B570DF91C46248A86399F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3B8995F01861CDF200B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B9D4D081862080200D15F56</string>
+				<string>3B8996021861CDF300B637C7</string>
+				<string>3B8996211861CDF300B637C7</string>
+				<string>3B8995FB1861CDF300B637C7</string>
+				<string>3B8995FA1861CDF300B637C7</string>
+				<string>A5AD93F7932C4C0195823A6A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8995F11861CDF300B637C7</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>de.gandev</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Andreas Gabriel</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>3B8996191861CDF300B637C7</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>3B8995F81861CDF300B637C7</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>3B8995F41861CDF300B637C7</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>3B8995F01861CDF200B637C7</string>
+			<key>productRefGroup</key>
+			<string>3B8995FA1861CDF300B637C7</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3B8995F81861CDF300B637C7</string>
+				<string>3B8996191861CDF300B637C7</string>
+			</array>
+		</dict>
+		<key>3B8995F41861CDF300B637C7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B8996291861CDF300B637C7</string>
+				<string>3B89962A1861CDF300B637C7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B8995F51861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B8996131861CDF300B637C7</string>
+				<string>3B89960D1861CDF300B637C7</string>
+				<string>3B8996091861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8995F61861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B8996321861DA5D00B637C7</string>
+				<string>3B8995FF1861CDF300B637C7</string>
+				<string>3B8996011861CDF300B637C7</string>
+				<string>3B8995FD1861CDF300B637C7</string>
+				<string>3BF21A6F072743B2B0EB71C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8995F71861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B8996151861CDF300B637C7</string>
+				<string>3B8996071861CDF300B637C7</string>
+				<string>3B9D4D091862080200D15F56</string>
+				<string>3B8996101861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8995F81861CDF300B637C7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3B89962B1861CDF300B637C7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>158B570DF91C46248A86399F</string>
+				<string>3B8995F51861CDF300B637C7</string>
+				<string>3B8995F61861CDF300B637C7</string>
+				<string>3B8995F71861CDF300B637C7</string>
+				<string>CA53345593DF402AB00AFF55</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GeoTracker</string>
+			<key>productName</key>
+			<string>GeoTracker</string>
+			<key>productReference</key>
+			<string>3B8995F91861CDF300B637C7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>3B8995F91861CDF300B637C7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GeoTracker.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3B8995FA1861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8995F91861CDF300B637C7</string>
+				<string>3B89961A1861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8995FB1861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996311861DA5D00B637C7</string>
+				<string>3B8995FC1861CDF300B637C7</string>
+				<string>3B8995FE1861CDF300B637C7</string>
+				<string>3B8996001861CDF300B637C7</string>
+				<string>3B89961B1861CDF300B637C7</string>
+				<string>F6C15A47FB304691A1B13102</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8995FC1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3B8995FD1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8995FC1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8995FE1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3B8995FF1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8995FE1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996001861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3B8996011861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996001861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996021861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B89960B1861CDF300B637C7</string>
+				<string>3B89960C1861CDF300B637C7</string>
+				<string>3B89960E1861CDF300B637C7</string>
+				<string>3B8996111861CDF300B637C7</string>
+				<string>3B8996121861CDF300B637C7</string>
+				<string>3B8996141861CDF300B637C7</string>
+				<string>3B8996031861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GeoTracker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996031861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996041861CDF300B637C7</string>
+				<string>3B8996051861CDF300B637C7</string>
+				<string>3B8996081861CDF300B637C7</string>
+				<string>3B89960A1861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996041861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GeoTracker-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996051861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996061861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996061861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996071861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996051861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996081861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996091861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996081861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B89960A1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GeoTracker-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B89960B1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>de_gandevAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B89960C1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>de_gandevAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B89960D1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B89960C1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B89960E1861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B89960F1861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B89960F1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996101861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B89960E1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996111861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>de_gandevViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996121861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>de_gandevViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996131861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996121861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996141861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996151861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996141861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996161861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B8996281861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8996171861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B89961C1861CDF300B637C7</string>
+				<string>3B89961E1861CDF300B637C7</string>
+				<string>3B89961D1861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8996181861CDF300B637C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B8996261861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3B8996191861CDF300B637C7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3B89962E1861CDF300B637C7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3B8996161861CDF300B637C7</string>
+				<string>3B8996171861CDF300B637C7</string>
+				<string>3B8996181861CDF300B637C7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3B8996201861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GeoTrackerTests</string>
+			<key>productName</key>
+			<string>GeoTrackerTests</string>
+			<key>productReference</key>
+			<string>3B89961A1861CDF300B637C7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>3B89961A1861CDF300B637C7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GeoTrackerTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3B89961B1861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3B89961C1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B89961B1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B89961D1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8995FC1861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B89961E1861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996001861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B89961F1861CDF300B637C7</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>3B8995F11861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3B8995F81861CDF300B637C7</string>
+			<key>remoteInfo</key>
+			<string>GeoTracker</string>
+		</dict>
+		<key>3B8996201861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>3B8995F81861CDF300B637C7</string>
+			<key>targetProxy</key>
+			<string>3B89961F1861CDF300B637C7</string>
+		</dict>
+		<key>3B8996211861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996271861CDF300B637C7</string>
+				<string>3B8996221861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GeoTrackerTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996221861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996231861CDF300B637C7</string>
+				<string>3B8996241861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996231861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GeoTrackerTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996241861CDF300B637C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B8996251861CDF300B637C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996251861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996261861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996241861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996271861CDF300B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GeoTrackerTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B8996281861CDF300B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996271861CDF300B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B8996291861CDF300B637C7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B89962A1861CDF300B637C7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B89962B1861CDF300B637C7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B89962C1861CDF300B637C7</string>
+				<string>3B89962D1861CDF300B637C7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B89962C1861CDF300B637C7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A5AD93F7932C4C0195823A6A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GeoTracker/GeoTracker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoTracker/GeoTracker-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B89962D1861CDF300B637C7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A5AD93F7932C4C0195823A6A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GeoTracker/GeoTracker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoTracker/GeoTracker-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B89962E1861CDF300B637C7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B89962F1861CDF300B637C7</string>
+				<string>3B8996301861CDF300B637C7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3B89962F1861CDF300B637C7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GeoTracker.app/GeoTracker</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GeoTracker/GeoTracker-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoTrackerTests/GeoTrackerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3B8996301861CDF300B637C7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GeoTracker.app/GeoTracker</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GeoTracker/GeoTracker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GeoTrackerTests/GeoTrackerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3B8996311861DA5D00B637C7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>3B8996321861DA5D00B637C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B8996311861DA5D00B637C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B9D4D081862080200D15F56</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B9D4D091862080200D15F56</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B9D4D081862080200D15F56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BF21A6F072743B2B0EB71C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F6C15A47FB304691A1B13102</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A5AD93F7932C4C0195823A6A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA53345593DF402AB00AFF55</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F6C15A47FB304691A1B13102</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>3B8995F11861CDF300B637C7</string>
+</dict>
+</plist>
