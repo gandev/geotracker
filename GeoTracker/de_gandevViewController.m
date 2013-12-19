@@ -43,24 +43,36 @@
     [locationManager startUpdatingLocation];
 }
 
+- (NSObject*) createFormattedLocation:(CLLocation *)loc {
+    NSNumber *altitude = [[NSNumber alloc] initWithDouble:loc.altitude];
+    NSNumber *latitude = [[NSNumber alloc] initWithDouble:loc.coordinate.latitude];
+    NSNumber *longitude = [[NSNumber alloc] initWithDouble:loc.coordinate.longitude];
+    NSNumber *course = [[NSNumber alloc] initWithDouble:loc.course];
+    NSNumber *horizontalAccuracy = [[NSNumber alloc] initWithDouble:loc.horizontalAccuracy];
+    NSNumber *speed = [[NSNumber alloc] initWithDouble:loc.speed];
+    NSNumber *timestamp = [[NSNumber alloc] initWithDouble:loc.timestamp.timeIntervalSince1970];
+    NSNumber *verticalAccuracy = [[NSNumber alloc] initWithDouble:loc.verticalAccuracy];
+    
+    return @{@"altitude": altitude,
+             @"coordinate": @{@"latitude": latitude,
+                              @"longitude": longitude},
+             @"course": course,
+             @"horizontalAccuracy": horizontalAccuracy,
+             @"speed": speed,
+             @"timestamp": timestamp,
+             @"verticalAccuracy": verticalAccuracy};
+}
+
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray *)locations {
     location = [locations lastObject];
-    self.currentLocation.text = location.description;
     
-    NSNumber *altitude = [[NSNumber alloc] initWithDouble:location.altitude];
+    NSArray *formatted_locations = @[[self createFormattedLocation:location]];
     
-    NSArray *parameters = @[@{@"description": location.description,
-                              @"altitude": altitude}];
-    
-    [mc callMethodName:@"addLocation" parameters:parameters responseCallback:^(NSDictionary *response, NSError *error) {
-//        NSString *message = response[@"result"];
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Meteor Todos"
-//                                                        message:message
-//                                                       delegate:nil
-//                                              cancelButtonTitle:@"Great"
-//                                              otherButtonTitles:nil];
-//        [alert show];
+    [mc callMethodName:@"addLocation" parameters:formatted_locations responseCallback:^(NSDictionary *response, NSError *error) {
+        NSString *message = response[@"result"];
+        
+        self.currentLocation.text = message;
     }];
     
 }

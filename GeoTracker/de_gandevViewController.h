@@ -21,9 +21,11 @@
     ObjectiveDDP *ddp;
 }
 
-  @property (nonatomic, strong) IBOutlet UILabel *currentLocation;
-  @property (nonatomic, strong) IBOutlet UITextField *connectionURL;
+@property (nonatomic, strong) IBOutlet UILabel *currentLocation;
+@property (nonatomic, strong) IBOutlet UITextField *connectionURL;
 
-  - (IBAction)activateTracking:(id)sender;
+- (IBAction)activateTracking:(id)sender;
+
+- (NSObject*)createFormattedLocation:(CLLocation *)loc;
 
 @end
